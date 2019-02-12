@@ -7,13 +7,15 @@ import { Material } from './material.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { FGroupComponent } from './f-group/f-group.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    FGroupComponent
   ],
   imports: [
     BrowserModule,
