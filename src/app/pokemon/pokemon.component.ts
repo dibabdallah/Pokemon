@@ -16,4 +16,7 @@ export class PokemonComponent implements OnInit {
     this.pokemons = POKEMONS;
   }
 
+  selectPokemon(pokemon: Pokemon) {
+    console.log('Vous avez selectionné ' + pokemon.name);
+  }
 }
