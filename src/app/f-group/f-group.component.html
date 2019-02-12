@@ -1,28 +1,31 @@
-
-    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
-      <div class="form-group">
-        <label>Name</label>
-        <input type="text" class="form-control" form-controlName="Name">
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="text" class="form-control" form-controlName="Email">
-      </div>
+<div class="container">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" formControlName="name">
       
-      <div formGroupName="address">
-        <div class="form-group">
-          <label>Street</label>
-          <input type="text" class="form-control" form-controlName="Street">
-        </div>
-        <div class="form-group">
-          <label>City</label>
-          <input type="text" class="form-control" form-controlName="City">
-        </div>
-        <div class="form-group">
-          <label>PostaleCode</label>
-          <input type="text" class="form-control" form-controlName="PostaleCode">
-        </div>
+    </div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="text" class="form-control" formControlName="email">
+    </div>
+
+    <div formGroupName="address">
+      <div class="form-group">
+        <label>Street</label>
+        <input type="text" class="form-control" formControlName="street">
       </div>
-  
-      <button type="submit" class="btn btn-primary">submit</button>
-    </form>
+      <div class="form-group">
+        <label>City</label>
+        <input type="text" class="form-control" formControlName="city">
+      </div>
+      <div class="form-group">
+        <label>PostalCode</label>
+        <input type="text" class="form-control" formControlName="postalcode">
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">submit</button>
+  </form>
+
+</div>
