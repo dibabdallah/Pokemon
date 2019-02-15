@@ -4,7 +4,7 @@ import { FormComponent } from './form/form.component';
 import { PokemonComponent } from './pokemon/pokemon.component';
 
 const routes: Routes = [
-  { path: '', component: FormComponent },
+  { path: 'form', component: FormComponent },
   { path: 'pokemon', component: PokemonComponent },
 
 ];
