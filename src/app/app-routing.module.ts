@@ -6,6 +6,7 @@ import { PokemonComponent } from './pokemon/pokemon.component';
 const routes: Routes = [
   { path: 'form', component: FormComponent },
   { path: 'pokemon', component: PokemonComponent },
+  { path: '**', redirectTo: 'not-found' }
 
 ];
 

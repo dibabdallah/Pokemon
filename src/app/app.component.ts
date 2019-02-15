@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'app-mat';
   constructor( private router: Router) { }
-  onpok() {this.router.navigate(['/pokemon']);
+  onpok() {
+    this.router.navigate(['/pokemon']);
+    console.log('click');
   }
 }
