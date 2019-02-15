@@ -2,7 +2,7 @@
  <mat-toolbar color="primary">
     <mat-toolbar-row>
         <span>Bitfumes</span>
-        <button mat-button (click)="onpok()">Theme</button></a>
+        <button mat-button (click)="onpok()">Theme</button>
  </mat-toolbar-row>
  </mat-toolbar>
  <br>
@@ -11,5 +11,6 @@
 
 <app-f-group></app-f-group>
 <br>
-<app-pokemon></app-pokemon>
+<button type="button" class="btn btn-default" [routerLink]="['/pokemon']">pokemon</button>
+
 <router-outlet></router-outlet>
